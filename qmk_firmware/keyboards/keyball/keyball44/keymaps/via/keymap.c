@@ -69,3 +69,24 @@ void oledkit_render_info_user(void) {
     keyball_oled_render_layerinfo();
 }
 #endif
+
+// K + J = Left Click
+const uint16_t PROGMEM kj_combo[] = {
+    KC_K, KC_J, COMBO_END
+};
+
+// K + L = Right Click
+const uint16_t PROGMEM kl_combo[] = {
+    KC_K, KC_L, COMBO_END
+};
+
+// J + K + L = Scroll Mode
+const uint16_t PROGMEM jkl_combo[] = {
+    KC_J, KC_K, KC_L, COMBO_END
+};
+
+combo_t key_combos[] = {
+    COMBO(kj_combo, KC_BTN1),
+    COMBO(kl_combo, KC_BTN2),
+    COMBO(jkl_combo, SCRL_MO),
+};
