@@ -86,7 +86,7 @@ const uint16_t PROGMEM jkl_combo[] = {
 };
 
 combo_t key_combos[] = {
-    COMBO(kj_combo, KC_BTN1),
-    COMBO(kl_combo, KC_BTN2),
-    COMBO(jkl_combo, SCRL_MO),
+    COMBO(kj_combo, KC_X),
+    COMBO(kl_combo, KC_Y),
+    COMBO(jkl_combo, KC_Z),
 };
