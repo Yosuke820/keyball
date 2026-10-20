@@ -85,7 +85,7 @@ const uint16_t PROGMEM jkl_combo[] = {
     KC_J, KC_K, KC_L, COMBO_END
 };
 
-combo_t key_combos[] = {
+combo_t key_combos[COMBO_COUNT] = {
     COMBO(kj_combo, KC_X),
     COMBO(kl_combo, KC_Y),
     COMBO(jkl_combo, KC_Z),
